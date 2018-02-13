@@ -1,0 +1,25 @@
+
+{
+    "jhipstermonolithApp": {
+        "book" : {
+            "home": {
+                "title": "Books",
+                "createLabel": "Dodaj Book",
+                "createOrEditLabel": "Dodaj lub edytuj: Book"
+            },
+            "created": "Utworzono nowy Book z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Book z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Book z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Book {{ id }}?"
+            },
+            "detail": {
+                "title": "Book"
+            },
+            "title": "Title",
+            "description": "Description",
+            "publishedOn": "Published On",
+            "author": "Author"
+        }
+    }
+}
