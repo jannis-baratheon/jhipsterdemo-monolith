@@ -1,0 +1,25 @@
+
+{
+    "jhipstermonolithApp": {
+        "author" : {
+            "home": {
+                "title": "Authors",
+                "createLabel": "Dodaj Author",
+                "createOrEditLabel": "Dodaj lub edytuj: Author"
+            },
+            "created": "Utworzono nowy Author z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Author z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Author z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Author {{ id }}?"
+            },
+            "detail": {
+                "title": "Author"
+            },
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "about": "About",
+            "book": "Book"
+        }
+    }
+}
