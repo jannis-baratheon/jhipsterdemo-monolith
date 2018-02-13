@@ -93,13 +93,6 @@ jhipster:
         version: V_1_1 # To use HTTP/2 you will need SSL support (see above the "server.ssl" configuration)
         cache: # Used by the CachingHttpHeadersFilter
             timeToLiveInDays: 1461
-    security:
-        authentication:
-            jwt:
-                secret: 3a2b2ea16bb7c5f17a0489828d5ca06915046716
-                # Token is valid 24 hours
-                token-validity-in-seconds: 86400
-                token-validity-in-seconds-for-remember-me: 2592000
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: jhipstermonolith@localhost
         base-url: http://my-server-url-to-change # Modify according to your server's URL

@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { JhiLanguageService } from 'ng-jhipster';
 
 import { ProfileService } from '../profiles/profile.service';
-import { JhiLanguageHelper, Principal, LoginModalService, LoginService } from '../../shared';
+import { JhiLanguageHelper, Principal, LoginService } from '../../shared';
 
 import { VERSION } from '../../app.constants';
 
@@ -20,7 +19,6 @@ export class NavbarComponent implements OnInit {
     isNavbarCollapsed: boolean;
     languages: any[];
     swaggerEnabled: boolean;
-    modalRef: NgbModalRef;
     version: string;
 
     constructor(
@@ -28,7 +26,6 @@ export class NavbarComponent implements OnInit {
         private languageService: JhiLanguageService,
         private languageHelper: JhiLanguageHelper,
         private principal: Principal,
-        private loginModalService: LoginModalService,
         private profileService: ProfileService,
         private router: Router
     ) {
@@ -60,7 +57,7 @@ export class NavbarComponent implements OnInit {
     }
 
     login() {
-        this.modalRef = this.loginModalService.open();
+        this.loginService.login();
     }
 
     logout() {

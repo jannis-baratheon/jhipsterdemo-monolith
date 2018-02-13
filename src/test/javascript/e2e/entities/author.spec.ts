@@ -11,7 +11,7 @@ describe('Author e2e test', () => {
         browser.get('/');
         browser.waitForAngular();
         navBarPage = new NavBarPage();
-        navBarPage.getSignInPage().autoSignInUsing('admin', 'admin');
+        navBarPage.getSignInPage().loginWithOAuth('admin', 'admin');
         browser.waitForAngular();
     });
 
